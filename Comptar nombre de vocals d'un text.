@@ -1,0 +1,15 @@
+string input = Console.ReadLine();
+char [] text = input.ToCharArray();
+
+int cont = 0;
+for( int i = 0 ; i < text.Length ; i++)
+{
+    if (text [i] == 'a' || text [i] == 'e' || text [i] == 'u' 
+    || text [i] == 'i' || text [i] == 'o' )
+    {
+        cont = cont +1;
+    }
+
+}
+
+Console.WriteLine("El nombre de vocals del text és " + cont);
